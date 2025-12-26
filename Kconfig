@@ -1,0 +1,7 @@
+config XIAO_BLE_SUSPEND_QSPI_FLASH
+    bool "Put XIAO BLE QSPI flash into deep power-down on boot"
+    depends on BOARD_XIAO_BLE
+    default $(dt_nodelabel_enabled,p25q16h)
+    select PM_DEVICE
+    help
+      XIAO BLE has a P25Q16H QSPI flash that is not used by ZMK. This option puts it into deep power-down mode at boot to save power.

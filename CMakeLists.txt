@@ -1,0 +1,3 @@
+zephyr_library()
+
+zephyr_library_sources_ifdef(CONFIG_XIAO_BLE_SUSPEND_QSPI_FLASH src/qspi_sleep.c)
