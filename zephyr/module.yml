@@ -1,3 +1,4 @@
+name: zmk-feature-xiao-ble-qspi-suspend
 build:
   cmake: .
   kconfig: Kconfig
