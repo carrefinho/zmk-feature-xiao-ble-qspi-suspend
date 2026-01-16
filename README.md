@@ -2,6 +2,8 @@
 
 A ZMK Zephyr module that puts the XIAO BLE's external QSPI flash (P25Q16H) into deep power-down mode at boot to save about 10µA idle power consumption. The flash is unused by ZMK since settings are stored on internal flash.
 
+See also: [Nordic's power optimization recommendations](https://docs.nordicsemi.com/bundle/ncs-3.1.0/page/nrf/test_and_optimize/optimizing/power_general.html#put_the_external_flash_into_sleep_mode_in_inactivity_periods) on suspending external flash.
+
 ## Usage
 
 Add this module to your `config/west.yml`:
